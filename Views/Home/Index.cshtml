@@ -1,16 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@inject LanguageService language
 <!-- Page Content-->
 <div class="container px-4 px-lg-5">
     <!-- Heading Row-->
     <div class="row gx-4 gx-lg-5 align-items-center my-5">
         <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="~/images/resim.jpg" alt="..." /></div>
         <div class="col-lg-5">
-            <h1 class="font-weight-light">JAPONİC ARABA SERVİSİ</h1>
-            <p>Honda, Toyota, Mazda, Mitsubishi, Nissan ve Subaru marka arabalarınızı bakım ve servis randevu alabilirsiniz</p>
-            <a class="btn btn-primary" href="#!">Randevu Al</a>
+            <h1 class="font-weight-light">@language.Getkey("title")</h1>
+            <p>@language.Getkey("text")</p>
+            <a class="btn btn-primary" href="#!">@language.Getkey("meeting")</a>
         </div>
     </div>
     <!-- Call to Action-->

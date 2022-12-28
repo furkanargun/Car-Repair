@@ -132,6 +132,9 @@
   <data name="login" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="meeting" xml:space="preserve">
+    <value>Make an Appointment</value>
+  </data>
   <data name="menu" xml:space="preserve">
     <value>Menu</value>
   </data>
@@ -140,6 +143,12 @@
   </data>
   <data name="services" xml:space="preserve">
     <value>Services</value>
+  </data>
+  <data name="text" xml:space="preserve">
+    <value>You can make a maintenance and service appointment for your Honda, Toyota, Mazda, Mitsubishi, Nissan and Subaru brand cars.</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>JAPANESE CAR SERVICE</value>
   </data>
   <data name="tr" xml:space="preserve">
     <value>Turkish</value>

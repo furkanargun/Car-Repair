@@ -132,6 +132,9 @@
   <data name="login" xml:space="preserve">
     <value>Giriş Yap</value>
   </data>
+  <data name="meeting" xml:space="preserve">
+    <value>Randevu Al</value>
+  </data>
   <data name="menu" xml:space="preserve">
     <value>Menü</value>
   </data>
@@ -140,6 +143,12 @@
   </data>
   <data name="services" xml:space="preserve">
     <value>Servisler</value>
+  </data>
+  <data name="text" xml:space="preserve">
+    <value>Honda, Toyota, Mazda, Mitsubishi, Nissan ve Subaru marka arabalarınızı bakım ve servis randevu alabilirsiniz.</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>JAPONİC ARABA SERVİSİ</value>
   </data>
   <data name="tr" xml:space="preserve">
     <value>Türkçe</value>
