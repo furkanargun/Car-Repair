@@ -72,6 +72,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG95b3RhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/web programlama/CarRepair/Views/Yetki/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV0a2lcQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/web programlama/CarRepair/Views/Yetki/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV0a2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/web programlama/CarRepair/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

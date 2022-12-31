@@ -40,7 +40,7 @@ namespace CarRepair.Data.Migrations
 
                     b.HasIndex("ModelId");
 
-                    b.ToTable("Brand");
+                    b.ToTable("Brand", (string)null);
                 });
 
             modelBuilder.Entity("CarRepair.Models.Car", b =>
@@ -83,7 +83,7 @@ namespace CarRepair.Data.Migrations
 
                     b.HasIndex("BrandId");
 
-                    b.ToTable("Car");
+                    b.ToTable("Car", (string)null);
                 });
 
             modelBuilder.Entity("CarRepair.Models.Color", b =>
@@ -100,7 +100,7 @@ namespace CarRepair.Data.Migrations
 
                     b.HasKey("ColorId");
 
-                    b.ToTable("Color");
+                    b.ToTable("Color", (string)null);
                 });
 
             modelBuilder.Entity("CarRepair.Models.EngineCapacity", b =>
@@ -116,7 +116,7 @@ namespace CarRepair.Data.Migrations
 
                     b.HasKey("EngineId");
 
-                    b.ToTable("EngineCapacity");
+                    b.ToTable("EngineCapacity", (string)null);
                 });
 
             modelBuilder.Entity("CarRepair.Models.Gear", b =>
@@ -133,7 +133,7 @@ namespace CarRepair.Data.Migrations
 
                     b.HasKey("GearId");
 
-                    b.ToTable("Gear");
+                    b.ToTable("Gear", (string)null);
                 });
 
             modelBuilder.Entity("CarRepair.Models.KM", b =>
@@ -149,7 +149,7 @@ namespace CarRepair.Data.Migrations
 
                     b.HasKey("KmId");
 
-                    b.ToTable("KM");
+                    b.ToTable("KM", (string)null);
                 });
 
             modelBuilder.Entity("CarRepair.Models.Model", b =>
@@ -172,7 +172,7 @@ namespace CarRepair.Data.Migrations
 
                     b.HasKey("ModelId");
 
-                    b.ToTable("Model");
+                    b.ToTable("Model", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

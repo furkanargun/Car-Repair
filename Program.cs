@@ -8,6 +8,8 @@ using Microsoft.Extensions.Options;
 using System.Globalization;
 using System.Reflection;
 
+//using Microsoft.AspNetCore.Authentication.Cookies;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -19,6 +21,10 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+
+//builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme);
+
 
 // dil servisini ekledim
 //builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");

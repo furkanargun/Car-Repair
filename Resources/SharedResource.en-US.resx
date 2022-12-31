@@ -123,6 +123,9 @@
   <data name="admin" xml:space="preserve">
     <value>Admin</value>
   </data>
+  <data name="adminpanel" xml:space="preserve">
+    <value>Admin Panel</value>
+  </data>
   <data name="en" xml:space="preserve">
     <value>English</value>
   </data>

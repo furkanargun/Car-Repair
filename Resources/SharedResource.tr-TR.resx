@@ -123,6 +123,9 @@
   <data name="admin" xml:space="preserve">
     <value>Yönetici</value>
   </data>
+  <data name="adminpanel" xml:space="preserve">
+    <value>Yönetici Paneli</value>
+  </data>
   <data name="en" xml:space="preserve">
     <value>İngilizce</value>
   </data>
