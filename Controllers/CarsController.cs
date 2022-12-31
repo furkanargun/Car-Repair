@@ -22,7 +22,7 @@ namespace CarRepair.Controllers
         // GET: Cars
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Car.Include(c => c.Brand);
+            var applicationDbContext = _context.Car.Include(c => c.EngineCapacity).Include(c => c.Gear).Include(c => c.Model);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -35,7 +35,9 @@ namespace CarRepair.Controllers
             }
 
             var car = await _context.Car
-                .Include(c => c.Brand)
+                .Include(c => c.EngineCapacity)
+                .Include(c => c.Gear)
+                .Include(c => c.Model)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (car == null)
             {
@@ -48,7 +50,9 @@ namespace CarRepair.Controllers
         // GET: Cars/Create
         public IActionResult Create()
         {
-            ViewData["BrandId"] = new SelectList(_context.Brand, "BrandId", "BrandId");
+            ViewData["EngineId"] = new SelectList(_context.EngineCapacity, "Id", "Capacity");
+            ViewData["GearId"] = new SelectList(_context.Gear, "Id", "GearType");
+            ViewData["ModelId"] = new SelectList(_context.Model, "Id", "ModelName");
             return View();
         }
 
@@ -57,7 +61,7 @@ namespace CarRepair.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CarBrand,BrandId,Model,Year,EngineCapacity,Image,Price,KM,Gear")] Car car)
+        public async Task<IActionResult> Create([Bind("Id,ModelId,Year,EngineId,Image,Price,KM,GearId")] Car car)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +69,9 @@ namespace CarRepair.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BrandId"] = new SelectList(_context.Brand, "BrandId", "BrandId", car.BrandId);
+            ViewData["EngineId"] = new SelectList(_context.EngineCapacity, "Id", "Capacity", car.EngineId);
+            ViewData["GearId"] = new SelectList(_context.Gear, "Id", "GearType", car.GearId);
+            ViewData["ModelId"] = new SelectList(_context.Model, "Id", "ModelName", car.ModelId);
             return View(car);
         }
 
@@ -82,7 +88,9 @@ namespace CarRepair.Controllers
             {
                 return NotFound();
             }
-            ViewData["BrandId"] = new SelectList(_context.Brand, "BrandId", "BrandId", car.BrandId);
+            ViewData["EngineId"] = new SelectList(_context.EngineCapacity, "Id", "Capacity", car.EngineId);
+            ViewData["GearId"] = new SelectList(_context.Gear, "Id", "GearType", car.GearId);
+            ViewData["ModelId"] = new SelectList(_context.Model, "Id", "ModelName", car.ModelId);
             return View(car);
         }
 
@@ -91,7 +99,7 @@ namespace CarRepair.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CarBrand,BrandId,Model,Year,EngineCapacity,Image,Price,KM,Gear")] Car car)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ModelId,Year,EngineId,Image,Price,KM,GearId")] Car car)
         {
             if (id != car.Id)
             {
@@ -118,7 +126,9 @@ namespace CarRepair.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BrandId"] = new SelectList(_context.Brand, "BrandId", "BrandId", car.BrandId);
+            ViewData["EngineId"] = new SelectList(_context.EngineCapacity, "Id", "Capacity", car.EngineId);
+            ViewData["GearId"] = new SelectList(_context.Gear, "Id", "GearType", car.GearId);
+            ViewData["ModelId"] = new SelectList(_context.Model, "Id", "ModelName", car.ModelId);
             return View(car);
         }
 
@@ -131,7 +141,9 @@ namespace CarRepair.Controllers
             }
 
             var car = await _context.Car
-                .Include(c => c.Brand)
+                .Include(c => c.EngineCapacity)
+                .Include(c => c.Gear)
+                .Include(c => c.Model)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (car == null)
             {

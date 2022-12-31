@@ -17,30 +17,26 @@ namespace CarRepair.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.11")
+                .HasAnnotation("ProductVersion", "6.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("CarRepair.Models.Brand", b =>
                 {
-                    b.Property<int>("BrandId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BrandId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("BrandName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ModelId")
-                        .HasColumnType("int");
+                    b.HasKey("Id");
 
-                    b.HasKey("BrandId");
-
-                    b.HasIndex("ModelId");
-
-                    b.ToTable("Brand", (string)null);
+                    b.ToTable("Brand");
                 });
 
             modelBuilder.Entity("CarRepair.Models.Car", b =>
@@ -51,18 +47,11 @@ namespace CarRepair.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("BrandId")
+                    b.Property<int>("EngineId")
                         .HasColumnType("int");
 
-                    b.Property<string>("CarBrand")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("EngineCapacity")
-                        .HasColumnType("float");
-
-                    b.Property<string>("Gear")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("GearId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
@@ -70,8 +59,8 @@ namespace CarRepair.Data.Migrations
                     b.Property<double>("KM")
                         .HasColumnType("float");
 
-                    b.Property<string>("Model")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ModelId")
+                        .HasColumnType("int");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
@@ -81,98 +70,67 @@ namespace CarRepair.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BrandId");
+                    b.HasIndex("EngineId");
 
-                    b.ToTable("Car", (string)null);
-                });
+                    b.HasIndex("GearId");
 
-            modelBuilder.Entity("CarRepair.Models.Color", b =>
-                {
-                    b.Property<int>("ColorId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasIndex("ModelId");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ColorId"), 1L, 1);
-
-                    b.Property<string>("ColorName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ColorId");
-
-                    b.ToTable("Color", (string)null);
+                    b.ToTable("Car");
                 });
 
             modelBuilder.Entity("CarRepair.Models.EngineCapacity", b =>
                 {
-                    b.Property<int>("EngineId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EngineId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<double>("Capacity")
                         .HasColumnType("float");
 
-                    b.HasKey("EngineId");
+                    b.HasKey("Id");
 
-                    b.ToTable("EngineCapacity", (string)null);
+                    b.ToTable("EngineCapacity");
                 });
 
             modelBuilder.Entity("CarRepair.Models.Gear", b =>
                 {
-                    b.Property<int>("GearId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GearId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("GearType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("GearId");
+                    b.HasKey("Id");
 
-                    b.ToTable("Gear", (string)null);
-                });
-
-            modelBuilder.Entity("CarRepair.Models.KM", b =>
-                {
-                    b.Property<int>("KmId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("KmId"), 1L, 1);
-
-                    b.Property<double>("Km")
-                        .HasColumnType("float");
-
-                    b.HasKey("KmId");
-
-                    b.ToTable("KM", (string)null);
+                    b.ToTable("Gear");
                 });
 
             modelBuilder.Entity("CarRepair.Models.Model", b =>
                 {
-                    b.Property<int>("ModelId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ModelId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Color")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("EngineCapacity")
-                        .HasColumnType("float");
+                    b.Property<int>("BrandId")
+                        .HasColumnType("int");
 
                     b.Property<string>("ModelName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ModelId");
+                    b.HasKey("Id");
 
-                    b.ToTable("Model", (string)null);
+                    b.HasIndex("BrandId");
+
+                    b.ToTable("Model");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -377,18 +335,34 @@ namespace CarRepair.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("CarRepair.Models.Brand", b =>
+            modelBuilder.Entity("CarRepair.Models.Car", b =>
                 {
+                    b.HasOne("CarRepair.Models.EngineCapacity", "EngineCapacity")
+                        .WithMany()
+                        .HasForeignKey("EngineId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CarRepair.Models.Gear", "Gear")
+                        .WithMany()
+                        .HasForeignKey("GearId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("CarRepair.Models.Model", "Model")
                         .WithMany()
                         .HasForeignKey("ModelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("EngineCapacity");
+
+                    b.Navigation("Gear");
+
                     b.Navigation("Model");
                 });
 
-            modelBuilder.Entity("CarRepair.Models.Car", b =>
+            modelBuilder.Entity("CarRepair.Models.Model", b =>
                 {
                     b.HasOne("CarRepair.Models.Brand", "Brand")
                         .WithMany()

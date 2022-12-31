@@ -138,14 +138,8 @@
   <data name="meeting" xml:space="preserve">
     <value>Randevu Al</value>
   </data>
-  <data name="menu" xml:space="preserve">
-    <value>Menü</value>
-  </data>
   <data name="register" xml:space="preserve">
     <value>Üye OL</value>
-  </data>
-  <data name="services" xml:space="preserve">
-    <value>Servisler</value>
   </data>
   <data name="text" xml:space="preserve">
     <value>Honda, Toyota, Mazda, Mitsubishi, Nissan ve Subaru marka arabalarınızı bakım ve servis randevu alabilirsiniz.</value>

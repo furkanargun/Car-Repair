@@ -14,11 +14,8 @@ namespace CarRepair.Data
 
         public DbSet<Car> Car { get; set; }
 
-        public DbSet<Color> Color { get; set; }
-
         public DbSet<EngineCapacity> EngineCapacity { get; set; }
         public DbSet<Gear> Gear { get; set; }
-        public DbSet<KM> KM { get; set; }
         public DbSet<Model> Model { get; set; }
     }
 }

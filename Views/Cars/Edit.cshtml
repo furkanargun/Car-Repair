@@ -15,19 +15,9 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="CarBrand" class="control-label"></label>
-                <input asp-for="CarBrand" class="form-control" />
-                <span asp-validation-for="CarBrand" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BrandId" class="control-label"></label>
-                <select asp-for="BrandId" class="form-control" asp-items="ViewBag.BrandId"></select>
-                <span asp-validation-for="BrandId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Model" class="control-label"></label>
-                <input asp-for="Model" class="form-control" />
-                <span asp-validation-for="Model" class="text-danger"></span>
+                <label asp-for="ModelId" class="control-label"></label>
+                <select asp-for="ModelId" class="form-control" asp-items="ViewBag.ModelId"></select>
+                <span asp-validation-for="ModelId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Year" class="control-label"></label>
@@ -35,9 +25,9 @@
                 <span asp-validation-for="Year" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EngineCapacity" class="control-label"></label>
-                <input asp-for="EngineCapacity" class="form-control" />
-                <span asp-validation-for="EngineCapacity" class="text-danger"></span>
+                <label asp-for="EngineId" class="control-label"></label>
+                <select asp-for="EngineId" class="form-control" asp-items="ViewBag.EngineId"></select>
+                <span asp-validation-for="EngineId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Image" class="control-label"></label>
@@ -55,9 +45,9 @@
                 <span asp-validation-for="KM" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Gear" class="control-label"></label>
-                <input asp-for="Gear" class="form-control" />
-                <span asp-validation-for="Gear" class="text-danger"></span>
+                <label asp-for="GearId" class="control-label"></label>
+                <select asp-for="GearId" class="form-control" asp-items="ViewBag.GearId"></select>
+                <span asp-validation-for="GearId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

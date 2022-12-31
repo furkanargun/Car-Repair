@@ -47,11 +47,17 @@
                         <li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">@language.Getkey("home")</a></li>
                         <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="tr-TR" class="nav-link">@language.Getkey("tr")</a></li>
                         <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US" class="nav-link">@language.Getkey("en")</a></li>
-                        <li class="nav-item"><a class="nav-link" asp-controller="Cars" asp-action="Index">@language.Getkey("services")</a></li>
 
                         @if (SignInManager.IsSignedIn(User))
                         {  
                             <li class="nav-item"><a class="nav-link" asp-controller="Cars" asp-action="Index">@language.Getkey("adminpanel")</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Brands" asp-action="Index">Marka ekle</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Models" asp-action="Index">Model Ekle</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="EngineCapacities" asp-action="Index">Motor Kapasitesi Ekle</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Gears" asp-action="Index">Vites Türü Ekle</a></li>
+                            @*<li class="nav-item"><a class="nav-link" asp-controller="Cars" asp-action="Index">@language.Getkey("adminpanel")</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Cars" asp-action="Index">@language.Getkey("adminpanel")</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Cars" asp-action="Index">@language.Getkey("adminpanel")</a></li>*@
                         }
                     </ul>
                     <partial name="_LoginPartial" />

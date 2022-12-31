@@ -1,6 +1,8 @@
-﻿@model IEnumerable<CarRepair.Models.Model>
+﻿@*@model IEnumerable<CarRepair.Models.Model>*@
+@model IEnumerable<CarRepair.Models.Car>
+
 @{
-    Layout = "_Layout2";
+    Layout = "_Layout";
 }
 
 <!-- Header-->
@@ -95,7 +97,7 @@
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">@item.ModelName</h5>
+                                @*<h5 class="fw-bolder">@item.CarBrand</h5>*@
                                 <!-- Product price-->
                                 <span class="text-muted text-decoration-line-through">899₺</span>
                                 599₺
