@@ -11,7 +11,7 @@ namespace CarRepair.Data
         {
         }
         public DbSet<Model> Model { get; set; }
-        public DbSet<CarRepair.Models.Brand> Brand { get; set; }
+        public DbSet<Brand> Brand { get; set; }
         //public DbSet<Brand> Brand { get; set; }
         //public DbSet<EngineCapacity> EngineCapacity { get; set; }
         //public DbSet<Gear> Gear { get; set; }

@@ -36,7 +36,7 @@ namespace CarRepair.Data.Migrations
 
                     b.HasKey("BrandID");
 
-                    b.ToTable("Brand");
+                    b.ToTable("Brand", (string)null);
                 });
 
             modelBuilder.Entity("CarRepair.Models.Model", b =>
@@ -58,7 +58,7 @@ namespace CarRepair.Data.Migrations
 
                     b.HasIndex("BrandID");
 
-                    b.ToTable("Model");
+                    b.ToTable("Model", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
