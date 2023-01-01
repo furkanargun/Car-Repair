@@ -126,6 +126,12 @@
   <data name="adminpanel" xml:space="preserve">
     <value>Yönetici Paneli</value>
   </data>
+  <data name="buton1" xml:space="preserve">
+    <value>Listele</value>
+  </data>
+  <data name="buton2" xml:space="preserve">
+    <value>Daha Fazla Bilgi</value>
+  </data>
   <data name="en" xml:space="preserve">
     <value>İngilizce</value>
   </data>
@@ -141,8 +147,17 @@
   <data name="register" xml:space="preserve">
     <value>Üye OL</value>
   </data>
+  <data name="secondhand" xml:space="preserve">
+    <value>İkinci El Araçlar</value>
+  </data>
+  <data name="service" xml:space="preserve">
+    <value>Servis Ücretleri</value>
+  </data>
   <data name="text" xml:space="preserve">
     <value>Honda, Toyota, Mazda, Mitsubishi, Nissan ve Subaru marka arabalarınızı bakım ve servis randevu alabilirsiniz.</value>
+  </data>
+  <data name="text2" xml:space="preserve">
+    <value>İkinci el araçlarımızı listelemek için tıklayın</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>JAPONİC ARABA SERVİSİ</value>

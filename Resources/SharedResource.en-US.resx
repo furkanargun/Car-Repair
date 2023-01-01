@@ -126,6 +126,12 @@
   <data name="adminpanel" xml:space="preserve">
     <value>Admin Panel</value>
   </data>
+  <data name="buton1" xml:space="preserve">
+    <value>Lists</value>
+  </data>
+  <data name="buton2" xml:space="preserve">
+    <value>More Info</value>
+  </data>
   <data name="en" xml:space="preserve">
     <value>English</value>
   </data>
@@ -141,8 +147,17 @@
   <data name="register" xml:space="preserve">
     <value>Register</value>
   </data>
+  <data name="secondhand" xml:space="preserve">
+    <value>Second Hand Cars</value>
+  </data>
+  <data name="service" xml:space="preserve">
+    <value>Service Prices</value>
+  </data>
   <data name="text" xml:space="preserve">
     <value>You can make a maintenance and service appointment for your Honda, Toyota, Mazda, Mitsubishi, Nissan and Subaru brand cars.</value>
+  </data>
+  <data name="text2" xml:space="preserve">
+    <value>Click to list our used vehicles</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>JAPANESE CAR SERVICE</value>

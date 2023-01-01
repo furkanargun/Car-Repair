@@ -10,8 +10,8 @@ namespace CarRepair.Data
             : base(options)
         {
         }
-        public DbSet<Model> Model { get; set; }
-        public DbSet<Brand> Brand { get; set; }
+        public DbSet<Car> Car { get; set; }
+        //public DbSet<Brand> Brand { get; set; }
         //public DbSet<Brand> Brand { get; set; }
         //public DbSet<EngineCapacity> EngineCapacity { get; set; }
         //public DbSet<Gear> Gear { get; set; }

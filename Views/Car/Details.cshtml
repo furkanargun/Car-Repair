@@ -1,0 +1,61 @@
+﻿@model CarRepair.Models.Car
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Car</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ModelName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ModelName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Brand)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EngineCapacity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EngineCapacity)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KM)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gear)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gear)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ModelID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
