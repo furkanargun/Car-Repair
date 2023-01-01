@@ -4,6 +4,7 @@ using CarRepair.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarRepair.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230101012701_5.test")]
+    partial class _5test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,39 +26,91 @@ namespace CarRepair.Data.Migrations
 
             modelBuilder.Entity("CarRepair.Models.Brand", b =>
                 {
-                    b.Property<int>("BrandID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BrandID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("BrandName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("BrandID");
+                    b.HasKey("Id");
 
                     b.ToTable("Brand");
                 });
 
-            modelBuilder.Entity("CarRepair.Models.Model", b =>
+            modelBuilder.Entity("CarRepair.Models.EngineCapacity", b =>
                 {
-                    b.Property<int>("ModelID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ModelID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("BrandID")
+                    b.Property<double>("Capacity")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EngineCapacity");
+                });
+
+            modelBuilder.Entity("CarRepair.Models.Gear", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("GearType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Gear");
+                });
+
+            modelBuilder.Entity("CarRepair.Models.Model", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("BrandId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EngineId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GearId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("KM")
+                        .HasColumnType("float");
 
                     b.Property<string>("ModelName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ModelID");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
-                    b.HasIndex("BrandID");
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
+
+                    b.HasIndex("EngineId");
+
+                    b.HasIndex("GearId");
 
                     b.ToTable("Model");
                 });
@@ -267,11 +321,27 @@ namespace CarRepair.Data.Migrations
                 {
                     b.HasOne("CarRepair.Models.Brand", "Brand")
                         .WithMany()
-                        .HasForeignKey("BrandID")
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CarRepair.Models.EngineCapacity", "EngineCapacity")
+                        .WithMany()
+                        .HasForeignKey("EngineId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CarRepair.Models.Gear", "Gear")
+                        .WithMany()
+                        .HasForeignKey("GearId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Brand");
+
+                    b.Navigation("EngineCapacity");
+
+                    b.Navigation("Gear");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

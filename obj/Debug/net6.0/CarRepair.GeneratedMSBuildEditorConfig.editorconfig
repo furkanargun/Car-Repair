@@ -20,84 +20,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Brands/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXENyZWF0ZS5jc2h0bWw=
+[D:/web programlama/CarRepair/Views/Brand/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Brands/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXERlbGV0ZS5jc2h0bWw=
+[D:/web programlama/CarRepair/Views/Brand/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Brands/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXERldGFpbHMuY3NodG1s
+[D:/web programlama/CarRepair/Views/Brand/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Brands/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXEVkaXQuY3NodG1s
+[D:/web programlama/CarRepair/Views/Brand/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Brands/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Cars/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Cars/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Cars/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Cars/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Cars/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/EngineCapacities/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lQ2FwYWNpdGllc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/EngineCapacities/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lQ2FwYWNpdGllc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/EngineCapacities/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lQ2FwYWNpdGllc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/EngineCapacities/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lQ2FwYWNpdGllc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/EngineCapacities/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lQ2FwYWNpdGllc1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Gears/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VhcnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Gears/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VhcnNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Gears/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VhcnNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Gears/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VhcnNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/web programlama/CarRepair/Views/Gears/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VhcnNcSW5kZXguY3NodG1s
+[D:/web programlama/CarRepair/Views/Brand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/web programlama/CarRepair/Views/Home/Index.cshtml]
@@ -112,24 +52,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9uZGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Models/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxzXENyZWF0ZS5jc2h0bWw=
+[D:/web programlama/CarRepair/Views/Model/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Models/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxzXERlbGV0ZS5jc2h0bWw=
+[D:/web programlama/CarRepair/Views/Model/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Models/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxzXERldGFpbHMuY3NodG1s
+[D:/web programlama/CarRepair/Views/Model/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Models/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxzXEVkaXQuY3NodG1s
+[D:/web programlama/CarRepair/Views/Model/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/web programlama/CarRepair/Views/Models/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxzXEluZGV4LmNzaHRtbA==
+[D:/web programlama/CarRepair/Views/Model/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/web programlama/CarRepair/Views/Services/Index.cshtml]
