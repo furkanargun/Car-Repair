@@ -277,7 +277,6 @@ D:\web programlama\CarRepair\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Dr
 D:\web programlama\CarRepair\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\web programlama\CarRepair\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\web programlama\CarRepair\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\web programlama\CarRepair\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout2.cshtml.rz.scp.css
 D:\web programlama\CarRepair\bin\Debug\net6.0\en-US\CarRepair.resources.dll
 D:\web programlama\CarRepair\bin\Debug\net6.0\tr-TR\CarRepair.resources.dll
 D:\web programlama\CarRepair\obj\Debug\net6.0\CarRepair.Resources.SharedResource.en-US.resources
