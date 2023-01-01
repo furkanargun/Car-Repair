@@ -135,11 +135,20 @@
   <data name="en" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="header" xml:space="preserve">
+    <value>Used Vehicle List</value>
+  </data>
+  <data name="hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
   <data name="home" xml:space="preserve">
     <value>Home</value>
   </data>
   <data name="login" xml:space="preserve">
     <value>Login</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>Logout</value>
   </data>
   <data name="meeting" xml:space="preserve">
     <value>Make an Appointment</value>
